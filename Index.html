@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyMark - Cofre de Links</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <button id="open-trash-btn" class="trash-btn">🗑️ Lixeira</button> 
+        
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle-btn" class="theme-toggle-btn">
+                Mudar para Modo Claro ☀️
+            </button>
+        </div>
+        <h1>KeyMark - Cofre de Links</h1>
+
+        <section id="capture-area">
+            <textarea id="link-input" placeholder="Cole o link ou digite sua ideia..."></textarea>
+            
+            <input type="text" id="alias-input" placeholder="Opcional: Título curto para o link (Alias)" style="width: 95%; padding: 10px; border-radius: 8px; border: 1px solid #3d4a66; background-color: #121212; color: #e5e5f7; font-size: 1rem; margin-bottom: 15px;">
+            
+            <input type="text" id="time-estimate-input" placeholder="Ex: 5 min, 1 hora, 30m (Opcional)" style="width: 95%; padding: 10px; border-radius: 8px; border: 1px solid #3d4a66; background-color: #121212; color: #e5e5f7; font-size: 1rem; margin-bottom: 15px;">
+            
+            <div class="priority-input-group">
+                <button id="priority-btn" class="priority-low">
+                    Prioridade: Baixa (Padrão)
+                </button>
+            </div>
+            
+            <div class="category-buttons">
+                <button class="save-btn" data-category="read">📚 Ler Depois</button>
+                <button class="save-btn" data-category="watch">📺 Assistir Depois</button>
+                <button class="save-btn" data-category="try">⚙️ Testar/Implementar</button>
+            </div>
+        </section>
+
+        <hr>
+        
+        <section id="filter-area">
+            <input type="search" id="search-input" placeholder="Buscar links por palavra-chave ou URL...">
+            
+            <div class="filter-buttons">
+                <h3>Filtrar por Status:</h3>
+                <button id="filter-all" data-filter="all" class="filter-btn active">Todos</button>
+                <button id="filter-pending" data-filter="pending" class="filter-btn">Pendentes</button>
+                <button id="filter-done" data-filter="done" class="filter-btn">Concluídos</button>
+            </div>
+
+            <div class="data-controls">
+                <button id="export-btn" class="data-btn export-btn">📥 Exportar Links</button>
+                <input type="file" id="import-file" accept=".json" style="display:none;">
+                <button id="import-btn" class="data-btn import-btn">📤 Importar Links</button>
+            </div>
+        </section>
+
+
+        <h2>Sua Fila de Conteúdo</h2>
+        <section id="vault-display">
+            
+            <div class="list-column">
+                <h3>📚 Ler Depois</h3>
+                <ul id="read-list" class="link-list">
+                    </ul>
+            </div>
+
+            <div class="list-column">
+                <h3>📺 Assistir Depois</h3>
+                <ul id="watch-list" class="link-list">
+                    </ul>
+            </div>
+
+            <div class="list-column">
+                <h3>⚙️ Testar/Implementar</h3>
+                <ul id="try-list" class="link-list">
+                    </ul>
+            </div>
+        </section>
+
+    </main>
+    
+    <div id="trash-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal-btn" class="close-btn">&times;</span>
+            <h3>🗑️ Itens Excluídos Recentemente</h3>
+            <p class="modal-info">Mostrando os últimos 5 itens. Eles serão removidos permanentemente após 10 exclusões.</p>
+            <ul id="trash-list" class="link-list modal-list">
+                </ul>
+        </div>
+    </div>
+    
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-confirm-btn" class="close-btn">&times;</span>
+            <h3>⚠️ Confirmação de Exclusão</h3>
+            <p>Você tem certeza que deseja enviar este item para a lixeira?</p>
+            <div class="confirm-actions">
+                <button id="confirm-delete-btn" class="btn-delete">Sim, Enviar para Lixeira</button>
+                <button id="cancel-delete-btn" class="btn-cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="edit-title-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-edit-title-btn">&times;</span>
+            <h3>✏️ Editar Título do Link (Alias)</h3>
+            
+            <p>Você pode alterar o nome exibido na lista para este link:</p>
+            
+            <input type="text" id="new-alias-input" placeholder="Digite o novo título/alias aqui">
+            
+            <div class="confirm-actions">
+                <button class="btn-cancel" id="cancel-edit-btn">Cancelar</button>
+                <button class="btn-done" id="save-new-alias-btn">Salvar Novo Título</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
