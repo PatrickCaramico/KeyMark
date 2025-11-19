@@ -60,7 +60,7 @@ To run the project in your own environment:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [YOUR_REPOSITORY_LINK]
+    git clone [/PatrickCaramico/KeyMark]
     ```
 2.  **Navigate to the project folder:**
     ```bash
