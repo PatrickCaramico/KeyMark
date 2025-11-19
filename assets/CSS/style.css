@@ -1,4 +1,4 @@
-/* Importação de uma fonte limpa */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 /* ----- 1. Global / Body ----- */
@@ -7,14 +7,17 @@ body {
     background-color: #121212; 
     color: #e5e5f7; 
     margin: 0;
-    padding: 20px;
+    padding: 0;
     min-height: 100vh;
+    overflow-x: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
 }
 
-/* ----- 2. Container / Header ----- */
+/* ----- 2. Container / Header (Estilos base) ----- */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     background-color: #1E1E1E; 
     padding: 30px;
     border-radius: 12px;
@@ -40,11 +43,10 @@ hr {
     margin: 20px 0;
 }
 
-/* --- Botão da Lixeira --- */
 .trash-btn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 20px; 
     background-color: #3d4a66;
     color: #e5e5f7;
     border: none;
@@ -59,7 +61,6 @@ hr {
     background-color: #556080;
 }
 
-
 /* ----- 3. Painel de Captura e Prioridade ----- */
 #capture-area {
     text-align: center;
@@ -70,7 +71,6 @@ hr {
 }
 
 /* Estilo dos Inputs - Modo Escuro Padrão */
-/* Nota: Estes estilos são base para o Modo Escuro */
 #link-input, #alias-input, #time-estimate-input { 
     width: 95%;
     padding: 10px;
@@ -433,7 +433,6 @@ hr {
     opacity: 0.8;
 }
 
-
 /* ======================================= */
 /* ----- Estilos dos Modais ----- */
 /* ======================================= */
@@ -540,17 +539,13 @@ hr {
     background-color: #556080;
 }
 
-
 /* ======================================= */
 /* ----- 8. Estilos para o Botão de Alternância de Tema ----- */
 /* ======================================= */
 .theme-switch-wrapper {
-    text-align: right;
-    margin-bottom: 10px;
-    margin-top: 10px; /* Adiciona um pequeno espaço abaixo da lixeira */
     position: absolute;
     top: 20px;
-    left: 20px; /* Mudei para a esquerda, conforme a lógica visual padrão (lixeira à direita) */
+    left: 20px; 
 }
 
 .theme-toggle-btn {
@@ -770,7 +765,7 @@ body.light-mode .link-actions button.btn-edit-title {
 body.light-mode .modal-content {
     background-color: #FFFFFF;
     border: 1px solid #DDDDDD;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .modal-content h3 {
@@ -800,4 +795,23 @@ body.light-mode .btn-cancel {
 
 body.light-mode .btn-cancel:hover {
     background-color: #999999;
+}
+
+/* ======================================= */
+/* ----- 10. Estilo de Escalonamento (Zoom 90%) ----- */
+/* ======================================= */
+
+.container-scaled {
+    transform: scale(0.9); 
+    transform-origin: top center; 
+    width: 100%; 
+    max-width: 1200px; 
+    padding: 30px;
+    position: relative; 
+    box-sizing: border-box; 
+    margin-top: 20px; 
+}
+
+body.light-mode .container-scaled {
+    padding: 30px; 
 }
