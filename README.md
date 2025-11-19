@@ -1,72 +1,72 @@
-# 🗝️ KeyMark - Cofre de Links e Ideias
+# 🗝️ KeyMark - Link & Idea Vault
 
-KeyMark é um cofre de links e ideias minimalista focado em **produtividade** e **organização**. Ele permite capturar URLs, notas e tarefas, categorizá-los em filas, definir prioridades e acompanhar o tempo gasto em cada item usando um timer integrado.
+KeyMark is a minimalist link and idea vault focused on **productivity** and **organization**. It allows you to capture URLs, notes, and tasks, categorize them into queues, define priorities, and track the time spent on each item using an integrated timer.
 
-## 💡 Visão Geral das Funcionalidades
+## 💡 Key Features Overview
 
-| Recurso | Descrição |
+| Feature | Description |
 | :--- | :--- |
-| **Captura Multifuncional** | Salve URLs e notas curtas, com suporte a **Alias (Título Curto)** e **Estimativa de Tempo**. |
-| **Priorização Visual** | Classifique seus itens com prioridade **Baixa**, **Média** ou **Alta**, refletida visualmente nos cards. |
-| **Organização em Colunas** | Três categorias principais de filas de conteúdo: **📚 Ler Depois**, **📺 Assistir Depois**, e **⚙️ Testar/Implementar**. |
-| **Timer Integrado** | Acompanhe o tempo real gasto em cada tarefa. Apenas um timer pode rodar por vez, garantindo foco. |
-| **Busca e Filtro** | Pesquise rapidamente por palavra-chave ou URL. Filtre por status (Pendentes/Concluídos). |
-| **Modo Claro/Escuro** | Alternância de tema salva no navegador para maior conforto visual. |
-| **Lixeira Inteligente** | Itens excluídos são armazenados temporariamente (limite de 10 itens) para restauração ou exclusão permanente. |
-| **Persistência & Backup** | Dados salvos automaticamente no Local Storage, com suporte para **Exportação** e **Importação** (formato JSON). |
+| **Multifunctional Capture** | Save URLs and short notes, with support for **Alias (Short Title)** and **Time Estimation**. |
+| **Visual Prioritization** | Classify your items with **Low**, **Medium**, or **High** priority, visually reflected on the cards. |
+| **Column Organization** | Three main content queue categories: **📚 Read Later**, **📺 Watch Later**, and **⚙️ Test/Implement**. |
+| **Integrated Timer** | Track the actual time spent on each task. Only one timer can run at a time, ensuring focus. |
+| **Search and Filter** | Quickly search by keyword or URL. Filter the display by status (**Pending** or **Completed**). |
+| **Light/Dark Mode** | Theme toggle is saved in the browser for visual comfort. |
+| **Smart Trash Bin** | Deleted items are temporarily stored (limit of 10 items) for restoration or permanent removal. |
+| **Persistence & Backup** | Data is automatically saved to Local Storage, with support for **Export** and **Import** (JSON format). |
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
-O KeyMark é construído utilizando tecnologias web fundamentais, garantindo leveza e portabilidade:
+KeyMark is built using fundamental web technologies, ensuring lightness and portability:
 
-* **HTML5:** Estrutura semântica.
-* **CSS3:** Estilização, sistema de temas (`.light-mode`) e layout responsivo (**Grid Layout**).
-* **JavaScript (Vanilla JS):** Lógica de estado, persistência de dados (Local Storage), timers, e manipulação do DOM.
+* **HTML5:** Semantic structure.
+* **CSS3:** Styling, theme system (`.light-mode`), and responsive layout (**Grid Layout**).
+* **JavaScript (Vanilla JS):** All logic for state management, data persistence (Local Storage), timers, and DOM manipulation.
 
-## 🚀 Como Utilizar o KeyMark
+## 🚀 How to Use KeyMark
 
-### 1. Salvar um Novo Item
+### 1. Saving a New Item
 
-1.  No campo principal (**"Cole o link ou digite sua ideia..."**), insira a URL ou o texto da sua nota.
-2.  (Opcional) Preencha os campos **Alias** (título curto) e **Estimativa de Tempo** (Ex: `30 min`, `1 hora`).
-3.  Clique no botão **Prioridade** para alternar o nível de importância (Baixa é o padrão).
-4.  Clique em um dos botões de categoria (📚, 📺, ⚙️) para adicionar o item à fila.
+1.  In the main input field (**"Paste the link or type your idea..."**), insert the URL or the text of your note.
+2.  (Optional) Fill in the **Alias** (short title) and **Time Estimate** (e.g., `30 min`, `1 hour`).
+3.  Click the **Priority** button to toggle the level of importance (Low is default).
+4.  Click one of the category buttons (📚, 📺, ⚙️) to add the item to the respective queue.
 
-### 2. Acompanhar Tempo com o Timer
+### 2. Tracking Time with the Timer
 
-O KeyMark foi projetado para focar em uma tarefa por vez.
+KeyMark is designed to help you focus on one task at a time.
 
-* Se o item tiver tempo registrado, clique em **⚙️ Controles Timer**.
-* Clique em **▶️ Iniciar**. O tempo começará a contar em segundos.
-* **Atenção:** Se outro timer estiver rodando, ele será pausado automaticamente.
-* Use **⏸️ Pausar** para parar a contagem e **↩️ Resetar** para zerar o tempo registrado.
+* If the item has a time estimate or already has time logged, a **⚙️ Timer Controls** button will appear. Click it.
+* Click **▶️ Start** to begin the time count.
+* **Note:** If another timer is running, it will be automatically paused.
+* Use **⏸️ Pause** to stop the count and **↩️ Reset** to clear the logged time.
 
-### 3. Edição e Status
+### 3. Editing and Status Management
 
-* **Marcar como Concluído:** Clique no botão **✅ Concluído**. O texto do item será riscado e seu status será atualizado nos filtros.
-* **Editar Título (Alias):** Para Links (URL), clique em **✏️ Título** para alterar o nome de exibição através do modal. Para Notas, clique diretamente no texto do conteúdo e edite; a alteração é salva ao clicar fora.
-* **Excluir:** Clique em **🗑️ Excluir**. O item será movido para a **Lixeira**.
+* **Mark as Completed:** Click the **✅ Completed** button on any item. Completed items will be crossed out, and their status updated in the filters.
+* **Edit Title (Alias):** For Links (URL), click **✏️ Title** to change the display name via the modal. For Notes, click directly on the content text and edit; the change is saved when you click outside (the `blur` event).
+* **Delete:** Click **🗑️ Delete**. You will be asked for confirmation before sending it to the trash bin.
 
-### 4. Backup de Dados
+### 4. Data Backup
 
-O KeyMark armazena todos os seus dados no Local Storage. Para portabilidade ou segurança:
+KeyMark stores all your data in Local Storage. For portability or security:
 
-1.  Clique em **📥 Exportar Links** para baixar um arquivo JSON com todos os seus dados.
-2.  Clique em **📤 Importar Links** para carregar um backup JSON e restaurar seu cofre.
+1.  Click **📥 Export Links** to download a JSON file containing all your links and trash bin items.
+2.  Click **📤 Import Links** and select a valid JSON backup file to restore your vault.
 
-## ⚙️ Instalação (Uso Local)
+## ⚙️ Installation (Local Use)
 
-Para rodar o projeto em seu próprio ambiente:
+To run the project in your own environment:
 
-1.  **Clone o repositório:**
+1.  **Clone the repository:**
     ```bash
-    git clone [LINK_DO_SEU_REPOSITORIO]
+    git clone [YOUR_REPOSITORY_LINK]
     ```
-2.  **Navegue até a pasta do projeto:**
+2.  **Navigate to the project folder:**
     ```bash
-    cd keymark-cofre-de-links
+    cd keymark-link-vault
     ```
-3.  **Abra no navegador:** Simplesmente abra o arquivo `index.html` em seu navegador de preferência. Como o projeto é puramente frontend (HTML, CSS e JS), não há necessidade de servidor web.
+3.  **Open in Browser:** Simply open the `index.html` file in your preferred browser. Since the project is purely frontend (HTML, CSS, and JS), no web server is required.
 
 ## 🤝 Contributions
 
