@@ -13,8 +13,8 @@
   <a href="#demo">Demonstração</a> •
   <a href="#funcionalidades">Funcionalidades</a> •
   <a href="#tech">Tecnologias</a> •
+  <a href="#roadmap">Roadmap</a> •
   <a href="#instalacao">Instalação</a> •
-  <a href="#roadmap">Roadmap</a>
 </p>
 
 ---
@@ -104,7 +104,7 @@ keymark-link-vault/
 - [ ] Transformar em extensão de navegador (Chrome/Edge).
 - [ ] Versão PWA (Progressive Web App) para instalação mobile.
 
-<a id="instalacao"></a>
+<a id="funcionalidades"></a>
 ## 💡 Como Usar
 
 1. No campo principal ("Paste the link..."), insira a URL ou texto da nota.
@@ -127,6 +127,7 @@ Clique em ▶️ Start para iniciar. Outros timers serão pausados automaticamen
 
 **Exportar/Importar:** Use os botões no rodapé da página para baixar um backup .json dos seus dados ou restaurá-los em outro dispositivo.
 
+<a id="instalacao"></a>
 ## 💻 Instalação e Execução Local
 
 Se você deseja rodar este projeto localmente, siga os passos abaixo:
