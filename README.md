@@ -1,7 +1,7 @@
 # 🗝️ KeyMark - Cofre de links
 
 <div align="center">
-  <a href="LINK_DO_SEU_DEPLOY_AQUI" target="_blank">
+  <a href="https://keymark.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Acesse_o_Projeto_Online-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy Link">
   </a>
 </div>
@@ -39,10 +39,10 @@ O objetivo é evitar a desorganização de abas abertas e centralizar seu fluxo 
     </tr>
     <tr>
       <td>
-        <img src="LINK_DA_IMAGEM_CLARA_AQUI" alt="KeyMark Tema Claro" width="400">
+        <img src="assets/images/KeyMark_Claro.png" alt="KeyMark Tema Claro" width="400">
       </td>
       <td>
-        <img src="LINK_DA_IMAGEM_ESCURA_AQUI" alt="KeyMark Tema Escuro" width="400">
+        <img src="assets/images/KeyMark_Escuro.png" alt="KeyMark Tema Escuro" width="400">
       </td>
     </tr>
   </table>
@@ -50,7 +50,7 @@ O objetivo é evitar a desorganização de abas abertas e centralizar seu fluxo 
 
 ### 🎥 Em Ação
 
-![Gif do Projeto](LINK_DO_GIF_AQUI)
+![Gif do Projeto](assets/images/Animacao_KeyMark.gif)
 
 ---
 
